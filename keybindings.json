@@ -28,10 +28,6 @@
     "command": "terminal.focus"
   },
   {
-    "key": "ctrl+k",
-    "command": "workbench.action.focusActiveEditorGroup"
-  },
-  {
     "key": "ctrl+l",
     "command": "workbench.action.focusLastEditorGroup"
   },
@@ -108,6 +104,10 @@
     "command": "workbench.action.terminal.focusNext"
   },
   {
+    "key": "ctrl+k",
+    "command": "restartterm"
+  },
+  {
     "key": "cmd+shift+j",
     "command": "workbench.action.terminal.focusPrevious"
   },
@@ -177,11 +177,6 @@
   },
   {
     "key": "ctrl+h",
-    "command": "-deleteLeft",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "ctrl+h",
     "command": "-extension.vim_ctrl+h",
     "when": "editorTextFocus && vim.active && vim.use<C-h> && !inDebugRepl"
   },
@@ -228,5 +223,28 @@
   {
     "key": "cmd+e",
     "command": "-actions.findWithSelection"
+  },
+  {
+    "key": "cmd+w",
+    "command": "-workbench.action.terminal.killEditor",
+    "when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated || terminalEditorFocus && terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+shift+w",
+    "command": "workbench.action.terminal.kill"
+  },
+  {
+    "key": "shift+cmd+z",
+    "command": "-redo"
+  },
+  {
+    "key": "shift+u",
+    "command": "extension.vim_ctrl+r",
+    "when": "editorTextFocus && vim.active && vim.use<C-r> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "-extension.vim_ctrl+r",
+    "when": "editorTextFocus && vim.active && vim.use<C-r> && !inDebugRepl"
   }
 ]
