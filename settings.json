@@ -1,7 +1,7 @@
 {
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "editor.suggestSelection": "first",
-  "editor.fontSize": 13,
+  "editor.fontSize": 12.5,
   "editor.minimap.enabled": false,
   "editor.scrollbar.verticalScrollbarSize": 0,
   "editor.scrollbar.horizontalScrollbarSize": 0,
@@ -89,6 +89,10 @@
       "commands": ["workbench.action.navigateEditorGroups"]
     },
     {
+      "before": ["<S-u>"],
+      "commands": ["extension.vim.ctrl+r"]
+    },
+    {
       "before": ["<S-k>"],
       "commands": ["editor.action.showHover"]
     },
@@ -148,6 +152,10 @@
       "before": ["<leader>", "w"],
       "commands": ["togs"]
     },
+    // {
+    //   "before": ["C-k"],
+    //   "commands": ["restartterm"]
+    // },
     {
       "before": ["g", "v"],
       "commands": ["formsav"]
@@ -202,55 +210,33 @@
   "commands.commands": {
     "togs": {
       "sequence": [
-        {
-          "command": "workbench.action.focusActiveEditorGroup"
-        },
-        {
-          "command": "workbench.action.toggleSidebarVisibility"
-        }
+        "workbench.action.focusActiveEditorGroup",
+        "workbench.action.toggleSidebarVisibility"
       ]
     },
     "tigs": {
       "sequence": [
-        {
-          "command": "workbench.action.toggleSidebarVisibility"
-        },
-        {
-          "command": "workbench.files.action.focusFilesExplorer"
-        }
+        "workbench.action.toggleSidebarVisibility",
+        "workbench.files.action.focusFilesExplorer"
       ]
     },
     "formsav": {
       "sequence": [
-        {
-          "command": "editor.action.formatDocument"
-        },
-        {
-          "command": "workbench.action.files.save"
-        }
+        "editor.action.formatDocument",
+        "workbench.action.files.save"
       ]
     },
     "endleft": {
-      "sequence": [
-        {
-          "command": "cursorEnd"
-        },
-        {
-          "command": "cursorLeft"
-        }
-      ]
+      "sequence": ["cursorEnd", "cursorLeft"]
     },
     "endselleft": {
+      "sequence": ["cursorEndSelect", "cursorLeftSelect", "execCopy"]
+    },
+    "restartterm": {
       "sequence": [
-        {
-          "command": "cursorEndSelect"
-        },
-        {
-          "command": "cursorLeftSelect"
-        },
-        {
-          "command": "execCopy"
-        }
+        "workbench.action.terminal.toggleTerminal",
+        "workbench.action.terminal.kill",
+        "workbench.action.terminal.new"
       ]
     },
     "gits": {
