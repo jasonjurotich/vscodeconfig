@@ -244,11 +244,8 @@
         {
           "command": "workbench.action.terminal.sendSequence",
           "args": {
-            "text": "git commit --allow-empty-message -m \"\"\n"
+            "text": "git add .\ngit commit --allow-empty-message -m \"\"\ngit push\n"
           }
-        },
-        {
-          "command": "git.push"
         }
       ]
     }
@@ -308,8 +305,8 @@
   "indentRainbow.indicatorStyle": "light",
   "workbench.colorCustomizations": {
     "statusBar.background": "#000000",
-    "statusBar.noFolderBackground": "#212121",
-    "statusBar.debuggingBackground": "#263238",
+    "statusBar.noFolderBackground": "#000000",
+    "statusBar.debuggingBackground": "#000000",
     "statusBar.foreground": "#689ab3",
     "editor.background": "#000000",
     "tab.activeBackground": "#000000",
@@ -375,7 +372,7 @@
   ],
   "redhat.telemetry.enabled": true,
   "markdown.editor.pasteUrlAsFormattedLink.enabled": "always",
-  "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
+  "lldb.library": "/Library/Developer/Toolchains/swift-6.0-DEVELOPMENT-SNAPSHOT-2024-06-22-a.xctoolchain/System/Library/PrivateFrameworks/LLDB.framework/Versions/A/LLDB",
   "lldb.launch.expressions": "native",
   "resmon.show.battery": false,
   "resmon.show.cpufreq": false,
@@ -394,5 +391,14 @@
   "window.commandCenter": false,
   "background.autoInstall": false,
   "background.windowBackgrounds": ["/Users/jj/Documents/GERMANCASTLE.jpg"],
-  "background.backgroundOpacity": [0.85, 0.9, 0.9, 0.9]
+  "background.backgroundOpacity": [0.85, 0.9, 0.9, 0.9],
+  "swift.path": "/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin",
+  "swift.sourcekit-lsp.serverArguments": [
+    "--experimental-feature",
+    "background-indexing"
+  ],
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  }
 }
