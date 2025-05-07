@@ -284,6 +284,7 @@
 
   "editor.multiCursorModifier": "ctrlCmd",
   "rust-analyzer.rustfmt.rangeFormatting.enable": true,
+  "rust-analyzer.checkOnSave": true,
   "rust-analyzer.checkOnSave.command": "clippy",
   "filePathBar.statusBarAlignment": "right",
   "spotify.showLyricsButton": false,
