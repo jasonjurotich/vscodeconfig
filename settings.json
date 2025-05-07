@@ -5,6 +5,8 @@
   "editor.minimap.enabled": false,
   "editor.scrollbar.verticalScrollbarSize": 0,
   "editor.scrollbar.horizontalScrollbarSize": 0,
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "editor.accessibilitySupport": "off",
   "editor.lineNumbers": "relative",
   "editor.renderLineHighlight": "line",
   "editor.folding": false,
@@ -14,9 +16,13 @@
   "editor.cursorBlinking": "solid",
   "editor.cursorWidth": 2,
   "editor.detectIndentation": false,
+  "breadcrumbs.enabled": false,
+  "editor.stickyScroll.enabled": false,
   "editor.hideCursorInOverviewRuler": false,
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
+  "editor.renderWhitespace": "none",
+  "editor.renderControlCharacters": false,
   "editor.formatOnType": true,
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
@@ -48,7 +54,7 @@
   "backgroundCover.imagePath": "/Users/jj/Documents/GERMANCASTLE.jpg",
   "settingsSync.keybindingsPerPlatform": false,
   "remoteHub.commitDirectlyWarning": "off",
-  "vim.vimrc.enable": true,
+  // "vim.vimrc.enable": true,
   "vim.cursorStylePerMode.insert": "line",
   "vim.cursorStylePerMode.normal": "block",
   "vim.insertModeKeyBindings": [
@@ -250,24 +256,32 @@
       ]
     }
   },
-  "cSpell.enabledLanguageIds": [
-    "asciidoc",
-    "css",
-    "git-commit",
-    "graphql",
-    "html",
-    "jade",
-    "jupyter",
-    "latex",
-    "less",
-    "markdown",
-    "plaintext",
-    "restructuredtext",
-    "scss",
-    "text",
-    "yaml",
-    "yml"
-  ],
+
+  "cSpell.enabledFileTypes": {
+    "markdown": true,
+    "plaintext": true,
+    "text": true,
+    "yaml": true,
+    "yml": true,
+    "jsonc": true,
+    "json": true,
+    "javascript": true,
+    "typescript": true,
+    "rust": true,
+    "asciidoc": true,
+    "css": true,
+    "git-commit": true,
+    "graphql": true,
+    "html": true,
+    "jade": true,
+    "jupyter": true,
+    "latex": true,
+    "less": true,
+    "restructuredtext": true,
+    "scss": true,
+    "*": false
+  },
+
   "editor.multiCursorModifier": "ctrlCmd",
   "rust-analyzer.rustfmt.rangeFormatting.enable": true,
   "rust-analyzer.checkOnSave.command": "clippy",
@@ -332,7 +346,7 @@
   "rust-analyzer.lens.references.enumVariant.enable": true,
   "rust-analyzer.lens.references.trait.enable": true,
   "rust-analyzer.highlighting.strings": false,
-  "markdown.marp.enableHtml": true,
+  "markdown.marp.html": "default",
   "vim.enableNeovim": true,
   "editor.formatOnSave": true,
   "[jsonc]": {
@@ -372,10 +386,10 @@
   ],
   "redhat.telemetry.enabled": true,
   "markdown.editor.pasteUrlAsFormattedLink.enabled": "always",
-  "lldb.library": "/Library/Developer/Toolchains/swift-6.0-DEVELOPMENT-SNAPSHOT-2024-06-22-a.xctoolchain/System/Library/PrivateFrameworks/LLDB.framework/Versions/A/LLDB",
   "lldb.launch.expressions": "native",
   "resmon.show.battery": false,
   "resmon.show.cpufreq": false,
+
   "vim.replaceWithRegister": true,
   "vim.smartRelativeLine": true,
   "vim.cursorStylePerMode.replace": "line",
@@ -384,20 +398,14 @@
   "vim.cursorStylePerMode.visualline": "line",
   "vim.neovimUseConfigFile": true,
   "vim.neovimConfigPath": "/Users/jj/.config/nvim/init.vim",
-  "[swift]": {
-    "editor.defaultFormatter": "vknabel.vscode-swiftformat"
-  },
+
   "workbench.activityBar.location": "top",
   "window.commandCenter": false,
   "background.autoInstall": false,
-  "background.windowBackgrounds": ["/Users/jj/Documents/GERMANCASTLE.jpg"],
-  "background.backgroundOpacity": [0.85, 0.9, 0.9, 0.9],
-  "swift.path": "/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin",
-  "swift.sourcekit-lsp.serverArguments": [
-    "--experimental-feature",
-    "background-indexing"
+  "background.windowBackgrounds": [
+    "/Users/jasonjurotich/Documents/BACKGROUND/GERMANCASTLE.jpg"
   ],
-  "editor.inlineSuggest.suppressSuggestions": true,
+  "background.backgroundOpacity": [0.85, 0.9, 0.9, 0.9],
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   }
