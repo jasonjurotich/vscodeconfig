@@ -318,19 +318,22 @@
   "workbench.editor.splitInGroupLayout": "vertical",
   "editor.inlayHints.enabled": "offUnlessPressed",
   "indentRainbow.indicatorStyle": "light",
+  "window.titleBarStyle": "custom",
   "workbench.colorCustomizations": {
-    "statusBar.background": "#000000",
-    "statusBar.noFolderBackground": "#000000",
-    "statusBar.debuggingBackground": "#000000",
+    "statusBar.background": "#00000080",
+    "statusBar.noFolderBackground": "#00000040",
+    "statusBar.debuggingBackground": "#00000040",
     "statusBar.foreground": "#689ab3",
-    "editor.background": "#000000",
-    "tab.activeBackground": "#000000",
-    "tab.inactiveBackground": "#000000",
-    "titleBar.activeBackground": "#000000",
-    "editorGroupHeader.tabsBackground": "#000000",
-    "terminal.background": "#000000",
-    "panel.background": "#000000",
-    "sideBar.background": "#000000"
+    "editor.background": "#00000040",
+    "tab.activeBackground": "#00000080",
+    "tab.inactiveBackground": "#00000080",
+    "titleBar.activeBackground": "#00000080",
+    "titleBar.inactiveBackground": "#00000080",
+    "editorGroupHeader.tabsBackground": "#00000080",
+    "terminal.background": "#00000040",
+    "panel.background": "#00000040",
+    "sideBar.background": "#00000080",
+    "sideBarSectionHeader.background": "#000000A0"
   },
   "rust-analyzer.inlayHints.closureReturnTypeHints.enable": "always",
   "rust-analyzer.inlayHints.discriminantHints.enable": "always",
@@ -398,7 +401,7 @@
   "vim.cursorStylePerMode.visualblock": "block",
   "vim.cursorStylePerMode.visualline": "line",
   "vim.neovimUseConfigFile": true,
-  "vim.neovimConfigPath": "/Users/jj/.config/nvim/init.vim",
+  // "vim.neovimConfigPath": "/Users/jj/.config/nvim/init.vim",
 
   "workbench.activityBar.location": "top",
   "window.commandCenter": false,
@@ -406,7 +409,7 @@
   "background.windowBackgrounds": [
     "/Users/jasonjurotich/Documents/BACKGROUND/GERMANCASTLE.jpg"
   ],
-  "background.backgroundOpacity": [0.85, 0.9, 0.9, 0.9],
+  "background.backgroundOpacity": [1.0, 1.0, 1.0, 1.0],
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   }
