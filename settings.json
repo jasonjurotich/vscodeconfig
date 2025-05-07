@@ -1,3 +1,5 @@
+// theme is dark modern
+
 {
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "editor.suggestSelection": "first",
