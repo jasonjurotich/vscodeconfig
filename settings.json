@@ -44,6 +44,7 @@
   "git.autofetch": true,
   "git.postCommitCommand": "push",
   "git.enableSmartCommit": true,
+  "git.allowEmptyCommitMessage": true,
   "gitlens.gitCommands.skipConfirmations": [
     "fetch:command",
     "stash-push:command",
@@ -165,7 +166,7 @@
     //   "commands": ["restartterm"]
     // },
     {
-      "before": ["g", "v"],
+      "before": ["g", "h"],
       "commands": ["formsav"]
     },
     {
@@ -187,10 +188,6 @@
     {
       "before": ["<leader>", "q"],
       "commands": ["workbench.action.closeEditorsInGroup"]
-    },
-    {
-      "before": ["<leader>", "a"],
-      "commands": ["gits"]
     },
     {
       "before": ["x"],
@@ -246,16 +243,6 @@
         "workbench.action.terminal.kill",
         "workbench.action.terminal.new"
       ]
-    },
-    "gits": {
-      "sequence": [
-        {
-          "command": "workbench.action.terminal.sendSequence",
-          "args": {
-            "text": "git add .\ngit commit --allow-empty-message -m \"\"\ngit push\n"
-          }
-        }
-      ]
     }
   },
 
@@ -269,7 +256,7 @@
     "json": true,
     "javascript": true,
     "typescript": true,
-    "rust": true,
+    "rust": false,
     "asciidoc": true,
     "css": true,
     "git-commit": true,
@@ -414,5 +401,14 @@
   "background.backgroundOpacity": [1.0, 1.0, 1.0, 1.0],
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
-  }
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "geminicodeassist.codeGenerationPaneViewEnabled": true,
+  "geminicodeassist.project": "jjirorg",
+  "diffEditor.codeLens": true,
+  "inlineChat.holdToSpeech": false,
+  "accessibility.verbosity.inlineChat": false,
+  "inlineChat.lineNaturalLanguageHint": false,
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font"
 }
+
